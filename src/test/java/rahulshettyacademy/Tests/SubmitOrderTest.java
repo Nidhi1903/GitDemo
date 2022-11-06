@@ -56,6 +56,11 @@ public class SubmitOrderTest extends BaseTest {
 		Boolean match = orderPage.VerifyOrderDisplay(productName);
 		Assert.assertTrue(match);
 	}
+
+	@Test(dependsOnMethods= {"submitOrder"})
+	public void OrderHistoryTest() {
+		System.out.println("Test");
+	}
 	
 	@DataProvider
 	public Object[][] getData() {
