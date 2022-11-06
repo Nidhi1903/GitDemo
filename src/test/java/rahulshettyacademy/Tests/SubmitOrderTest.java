@@ -58,8 +58,13 @@ public class SubmitOrderTest extends BaseTest {
 	}
 
 	@Test(dependsOnMethods= {"submitOrder"})
-	public void OrderHistoryTest() {
-		System.out.println("Test");
+	public void OrderHistoryTest2() {
+		System.out.println("Test2");
+	}
+	
+	@Test(dependsOnMethods= {"submitOrder"})
+	public void OrderHistoryTest3() {
+		System.out.println("Test3");
 	}
 	
 	@DataProvider
